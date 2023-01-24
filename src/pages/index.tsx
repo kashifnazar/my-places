@@ -23,9 +23,8 @@ export default function Index (props: IIndexProps) {
         }
       />
       <h1>
-          Index page
+          Home page
       </h1>
-      <Image src="/images/profile.jpg" alt='Profile' width={144} height={144} />
       <div className="title">
         Here is the list of the cities I have been to:
           <ul>
