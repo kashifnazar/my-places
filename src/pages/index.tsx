@@ -4,35 +4,51 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Script from 'next/script';
 import Layout from '@/components/layout';
+import utilStyles from '../styles/utils.module.css'
+import { getSortedPlacesData } from '@/lib/places';
 
 
 export interface IIndexProps {
+  allPlacesData: Array<{
+    id: string,
+    title: string,
+    date: string
+  }>
 }
 
-export default function Index (props: IIndexProps) {
-  return (
-    <Layout>
-      <Head>
-        <title>My Places</title>
-      </Head>
-      <Script
-        src="https://connect.facebook.net/en_US/sdk.js"
-        strategy="lazyOnload"
-        onLoad={() =>
-          console.log(`script loaded correctly, window.FB has been populated`, window.FB)
-        }
-      />
-      <h1>
-          Home page
-      </h1>
-      <div className="title">
-        Here is the list of the cities I have been to:
-          <ul>
-            <li><Link href="/places/london">London</Link></li>
-            <li><Link href="/places/islamabad">Islamabad</Link></li>
-            <li><Link href="/places/dubai">Dubai</Link></li>
-          </ul>
-      </div>
-    </Layout>
+export default function Index ({allPlacesData}: IIndexProps) {
+      return (
+        <>
+          <Head>
+            <title>My places</title>
+          </Head>
+          <Layout home>
+            {/* Keep the existing code here */}
+
+            {/* Add this <section> tag below the existing <section> tag */}
+            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+              <h2 className={utilStyles.headingLg}>Blog</h2>
+              <ul className={utilStyles.list}>
+                {allPlacesData.map(({ id, date, title }) => (
+                  <li className={utilStyles.listItem} key={id}>
+                    <Link href={`places/${id}`}>{title}</Link>
+                    <br />
+                    {date}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </Layout>
+        </>
   );
+}
+
+export const getStaticProps = async () => {
+  const allPlacesData = getSortedPlacesData()
+
+  return {
+    props: {
+      allPlacesData
+    }
+  }
 }
