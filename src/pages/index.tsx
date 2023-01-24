@@ -33,7 +33,7 @@ export default function Index ({allPlacesData}: IIndexProps) {
                   <li className={utilStyles.listItem} key={id}>
                     <Link href={`places/${id}`}>{title}</Link>
                     <br />
-                    {date}
+                    <small className={utilStyles.lightText}>{date}</small>
                   </li>
                 ))}
               </ul>

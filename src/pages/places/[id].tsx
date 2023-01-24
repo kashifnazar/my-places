@@ -2,6 +2,7 @@ import Layout from '@/components/layout';
 import * as React from 'react';
 import { getFileNames, getPlaceData } from '@/lib/places';
 import Head from 'next/head'
+import utilStyles from '../../styles/utils.module.css'
 
 
 export interface IPlaceProps {
@@ -19,14 +20,11 @@ export default function Place ({placeData: {id, title, date, contentHtml}}: IPla
         <Head>
             <title>{title}</title>
         </Head>
-
-        {id}
-        <br/>
-        {title}
-        <br/>
-        {date}
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <article>
+            <h1 className={utilStyles.headingXl}>{title}</h1>
+            <div className={utilStyles.lightText}>{date}</div>
+            <div dangerouslySetInnerHTML={{ __html: contentHtml }} className="content"></div>
+        </article>
     </Layout>
   );
 }
