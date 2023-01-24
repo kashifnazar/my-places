@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Head from 'next/head'
 import Script from 'next/script';
+import Layout from '@/components/layout';
 
 
 export interface IIndexProps {
@@ -10,7 +11,7 @@ export interface IIndexProps {
 
 export default function Index (props: IIndexProps) {
   return (
-    <>
+    <Layout>
       <Head>
         <title>My Places</title>
       </Head>
@@ -33,6 +34,6 @@ export default function Index (props: IIndexProps) {
             <li><Link href="/places/dubai">Dubai</Link></li>
           </ul>
       </div>
-    </>
+    </Layout>
   );
 }
