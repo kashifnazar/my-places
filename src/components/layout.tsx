@@ -7,7 +7,12 @@ import Link from 'next/link';
 const name = 'Kashif';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function Layout({ children, home }) {
+interface ILayoutProps {
+  children: React.ReactNode
+  home?: boolean
+}
+
+export const Layout: React.FC<ILayoutProps> = ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -67,3 +72,5 @@ export default function Layout({ children, home }) {
     </div>
   );
 }
+
+export default Layout
