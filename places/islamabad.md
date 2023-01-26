@@ -3,9 +3,24 @@ title: 'Islamabad'
 date: '2020-01-01'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Islamabad is the capital city of Pakistan, it is located in the Pothohar Plateau in the northeastern part of the country, it is known for its modern architecture, well-organized layout, and tree-lined streets. Its population is around 1.2 million people.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+## History
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Islamabad was built in the 1960s to replace Karachi as Pakistan's capital. The city was designed by Greek architect Constantinos A. Doxiadis and was intended to be a symbol of the country's progress and development.
+
+## Culture
+
+Islamabad is a diverse city with a mix of different cultures and ethnic groups. It has a rich cultural heritage, which is reflected in its many museums and historical sites. The city is also known for its delicious local cuisine and traditional crafts.
+
+## Attractions
+
+Some popular attractions in Islamabad include the Pakistan Monument, which is a national monument and heritage museum, the Shah Faisal Mosque, which is one of the largest mosques in the world and the Lok Virsa Museum, which showcases Pakistani folk culture. The city also has many parks and gardens, such as the Shakarparian National Park and the Rose and Jasmine Garden.
+
+## Transportation
+
+Islamabad has a well-developed transportation infrastructure, including a bus rapid transit system, local buses, and taxis. Private cars are also widely used in the city. The city also has a well-connected road network, with several major highways linking it to other parts of the country.
+
+## Conclusion
+
+Islamabad is a well-organized, modern city with a rich cultural heritage. It is a symbol of Pakistan's progress and development. The city has many historical sites, museums and beautiful parks and gardens that are worth visiting. With its excellent transportation infrastructure, it is easy to navigate and explore all that the city has to offer.
