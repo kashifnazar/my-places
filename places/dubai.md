@@ -1,6 +1,6 @@
 ---
 title: 'Dubai'
-date: '2020-01-01'
+date: '2023-01-23'
 ---
 
 Dubai is a city and emirate in the United Arab Emirates (UAE) known for its luxury shopping, ultramodern architecture and vibrant nightlife. It is located along the southeast coast of the Persian Gulf and has a population of over 3 million people.

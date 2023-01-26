@@ -64,6 +64,10 @@ a {
   color: rgb(93, 93, 221)
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

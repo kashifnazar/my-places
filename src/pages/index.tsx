@@ -28,6 +28,7 @@ export default function Index ({allPlacesData}: IIndexProps) {
             {/* Add this <section> tag below the existing <section> tag */}
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
               <h2 className={utilStyles.headingLg}>Blog</h2>
+              <p>This blog is my diary about all the places I have visited so far and what my feelings are like for these cities. Take a look.</p>
               <ul className={utilStyles.list}>
                 {allPlacesData.map(({ id, date, title }) => (
                   <li className={utilStyles.listItem} key={id}>

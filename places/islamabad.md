@@ -1,6 +1,6 @@
 ---
 title: 'Islamabad'
-date: '2020-01-01'
+date: '2023-01-10'
 ---
 
 Islamabad is the capital city of Pakistan, it is located in the Pothohar Plateau in the northeastern part of the country, it is known for its modern architecture, well-organized layout, and tree-lined streets. Its population is around 1.2 million people.
